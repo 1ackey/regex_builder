@@ -4,5 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss()],
+	base: '/regex/',
+	plugins: [react(),tailwindcss()],
+	  server:{
+	    host:'0.0.0.0',
+	    allowedHosts:['jackeywiki.cn','www.jackeywiki.cn'],
+ 	   port: 5001,
+  	}
 })
