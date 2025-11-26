@@ -1,7 +1,7 @@
 // 语料库标签集设置
 export const TAGSETS = {
-  UNDERSCORE: { id: 'UNDERSCORE', label: '标准 (_NN)', separator: '_', format: (tag) => `_${tag}` },
-  SLASH: { id: 'SLASH', label: 'Brown语料库 (/NN)', separator: '/', format: (tag) => `/${tag}` },
+  UNDERSCORE: { id: 'UNDERSCORE', label: '_NN', separator: '_', format: (tag) => `_${tag}` },
+  SLASH: { id: 'SLASH', label: '/NN', separator: '/', format: (tag) => `/${tag}` },
   XML: { id: 'XML', label: 'XML格式 (<w type="NN">)', separator: '', format: (tag) => `(?<=type="${tag}">)[^<]+` },
 };
 
@@ -22,18 +22,6 @@ export const FLAGS_CONFIG = {
   i: { label: '忽略大小写 (i)', desc: '匹配时不区分大小写 (如 The = the)' },
   s: { label: '单行模式 (s)', desc: '让点号 (.) 可以匹配换行符' },
   m: { label: '多行模式 (m)', desc: '让 ^ 和 $ 匹配每一行的行首和行尾' },
-};
-
-// 模拟词元数据库 (Lemma Dictionary)
-// 在实际生产环境中，这应该是一个 API 调用
-export const LEMMA_DB = {
-  be: ['be', 'is', 'am', 'are', 'was', 'were', 'been', 'being'],
-  have: ['have', 'has', 'had', 'having'],
-  do: ['do', 'does', 'did', 'done', 'doing'],
-  go: ['go', 'goes', 'went', 'gone', 'going'],
-  make: ['make', 'makes', 'made', 'making'],
-  run: ['run', 'runs', 'ran', 'running'],
-  eat: ['eat', 'eats', 'ate', 'eaten', 'eating'],
-  study: ['study', 'studies', 'studied', 'studying'],
-  // ... 可以扩展更多
+  u: { label: 'Unicode (u)', desc: '启用 Unicode 匹配' },
+  y: { label: '粘性 (y)', desc: '匹配从 lastIndex 位置开始' },
 };

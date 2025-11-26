@@ -7,7 +7,6 @@ const Toolbar = ({ onAddBlock }) => {
     { label: '指定词性', type: 'POS', icon: '', color: 'bg-orange-100 text-orange-700 border-orange-200' },
     { label: '原始正则', type: 'RAW_TEXT', icon: '', color: 'bg-slate-200 text-slate-700 border-slate-300', desc: '输入 \\d+ 或 [.,?!] 等' },
     { label: '任意词', type: 'WILDCARD', icon: '✱', color: 'bg-green-100 text-green-700 border-green-200', desc: '匹配 N 个未知单词' },
-    { label: '距离/间隔', type: 'GAP', icon: '↔', color: 'bg-purple-100 text-purple-700 border-purple-200' },
     { label: '词缀/词法', type: 'AFFIX', icon: 'Fix', color: 'bg-cyan-100 text-cyan-700 border-cyan-200', subType: 'PREFIX' },
     { label: '多选一', type: 'CHOICE', icon: '', color: 'bg-pink-100 text-pink-700 border-pink-200' },
     // Anchor 已删除

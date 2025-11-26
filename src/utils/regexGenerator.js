@@ -1,5 +1,5 @@
-import { TAGSETS, POS_OPTIONS, LEMMA_DB } from '../constants/settings';
-
+import { TAGSETS, POS_OPTIONS} from '../constants/settings';
+import { LEMMA_DB } from '../constants/LEMMA_DB';
 /**
  * 生成量词后缀
  * @param {number|string} min 最小次数
